@@ -1,0 +1,370 @@
+.padding-top {padding-top:50px;}
+
+
+
+
+
+/* ..............................
+........... Navbar CSS ..........
+...............................*/
+
+.navbar{
+    background-color: black;
+}
+.navbar .brand-navbar img:hover
+{
+    opacity: 0.7;
+}
+.navbar ul
+{
+padding: 0px 30px 0px 0px;
+}
+.navbar ul li a{
+    color:#4099FF;
+    margin: 10px 0px 0px 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+.navbar ul li a .fa{
+    padding-right:5px; 
+    padding-left:5px;
+    color: #15b000; 
+}
+.navbar ul li a:hover{
+    color: #15b000;
+}
+.navbar ul li.active > a {
+    color: #15b000;
+    font-weight: bold;
+    font-size: 16px;
+    border-left: 3px solid #15b000;
+    border-radius: 40px;
+    font-weight:bold;
+}
+.iconStyle
+{
+    color: #15b000;
+}
+/* ..............................
+........... Carousel CSS ..........
+...............................*/
+
+.carousel-caption {top:30px !important; left:10% !important;}
+.carousel-caption h1{font-size:50px;}
+.carousel-item img{height:450px;}
+/* ..............................
+........... Footer CSS ..........
+...............................*/
+.footer{
+    background-color: black;
+
+}
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+/*
+   Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+    color: #3B5998;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: #f39c12;
+}
+
+/* .........................................................
+.........................Profile Card CSS....................
+...........................................................*/
+
+.card-pro {
+    position:relative;
+    width:100%; 
+    background:#fff;
+    border-radius:10px;
+    transition:0.5s;
+    min-height:400px;
+    
+   
+}
+
+.card-pro .box {
+    position:absolute;
+    top:-50px;
+    z-index: +99;
+    text-align:center;
+    padding:5px;
+    box-sizing:border-box;
+    width:100%;
+    background:#fff;
+    box-shadow:2px 2px 2px rgba(247, 238, 238, 0.938) inset;
+    
+}
+.card-pro .box .img {
+    width:150px;
+    height:150px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+    
+}
+.card-pro .box .img img {
+    width:100%;
+    height:100%;
+}
+.card-pro .box h2 {
+    font-size:15px;
+    color:#262626;
+    margin:15px auto;
+}
+.card-pro .box h2 span {
+    font-size:14px;
+    background:#e91e63;
+    color:#fff;
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:15px;
+}
+.card-pro .box p {
+    color:#262626;
+}
+.card-pro .box span {
+    display:inline-flex;
+}
+.card-pro .box ul {
+    margin:0;
+    padding:0;
+}
+.card-pro .box ul li {
+    list-style:none;
+    float:left;
+}
+.card-pro .box ul li a {
+    display:block;
+    color:#aaa;
+    margin:0 10px;
+    font-size:25px;
+    transition:0.5s;
+    text-align:center;
+}
+.card-pro .box ul li:hover a {
+    color:#e91e63;
+    transform:rotateY(360deg);
+}
+
+
+
+/* .........................................................
+.........................Gallery CSS....................
+...........................................................*/
+
+
+
+
+
+
+.accordian {
+	width: 100%; height: 420px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 100%;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 50px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 840px;}
+
+
+.accordian ul li img {
+    display: block;
+    height:420px;
+    width:840px;
+
+}
+
+
+
+
+
+/* .........................................................
+.........................Our Players....................
+...........................................................*/
+
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    padding-top:40px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }
+  .swiper-slide img {height:150px;}
+
+
+  /* .........................................................
+......................... Registered with Us....................
+...........................................................*/
+
+
+.call-container{
+
+    background:url(../images/call.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding:0;
+    margin:0;
+    
+}
+
+.call-to-action {
+
+background:url(../images/rain.png);
+height:500px;
+animation: rain .5s linear infinite;
+
+}
+
+.call-to-action:before{
+    content:"";
+    height:100%;
+    width:100%;
+    background-color: #ffffff;
+    position:absolute;
+    opacity:0;
+    animation: lighting 3s linear infinite;
+}
+
+@keyframes rain {
+
+
+    0% {
+
+
+        background-position: 0% 0%;
+    }
+
+    100% {
+
+
+        background-position: 20% 100%;
+    }
+
+
+
+}
+@keyframes lighting {
+
+
+    0% {
+
+
+        opacity:0;
+    }
+
+    10% {
+
+
+        opacity:0;
+    }
+
+    11% {
+
+
+        opacity:1;
+    }
+
+    14% {
+
+
+        opacity:0;
+    }
+
+    20% {
+
+
+        opacity:0;
+    }
+    21% {
+
+
+        opacity:1;
+    }
+    24% {
+
+
+        opacity:0;
+    }
+
+    104% {
+
+
+        opacity:0;
+    }
+
+
+
+}
+
+.justify-content-between .card{background:none !important; color:#ffffff; margin:40px 10px;}
+
+
+.figure img {height:500px; width:100%;}
+.media .media-body{padding:20px 10px !important;}
